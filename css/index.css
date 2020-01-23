@@ -1,1 +1,356 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Cookie';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cookie-Regular'), url(https://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbf9kgqX.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rochester';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rochester Regular'), local('Rochester-Regular'), url(https://fonts.gstatic.com/s/rochester/v10/6ae-4KCqVa4Zy6Fif-UC2FHS.ttf) format('truetype');
+}
+.greyBackground {
+  background-color: #D3D3D3;
+}
+.greenText {
+  color: #2F4F4F;
+}
+html {
+  font-size: 62.5%;
+  margin: 20px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 3rem;
+  margin: 3%;
+  font-family: 'Cookie', cursive;
+}
+@media (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 5rem;
+    width: 100%;
+  }
+}
+.nav a {
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  background-color: #FFC0CB;
+  padding: 10px;
+  height: 55px;
+  color: grey;
+  width: 20%;
+}
+.nav a:hover {
+  background-color: #FFB6C1;
+}
+@media (max-width: 500px) {
+  .nav a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    border-width: 50%;
+    margin: 20px;
+    padding-bottom: 25px;
+  }
+}
+h1,
+h2 {
+  font-family: 'Rochester', cursive;
+}
+.images .waterfront {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .images .waterfront {
+    display: none;
+  }
+}
+.images .flowers {
+  display: none;
+}
+@media (max-width: 500px) {
+  .images .flowers {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+header p {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-family: 'Cookie', cursive;
+}
+header .butt {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  margin-left: 550px;
+  height: 25px;
+  border-radius: 20%;
+}
+header .butt:hover {
+  background-color: #80979d;
+}
+body {
+  background-color: #D3D3D3;
+}
+body h2 {
+  border-bottom: 2px dotted slategrey;
+  margin-bottom: 10px;
+}
+body li {
+  line-height: 1.5;
+  border-bottom: 1px dotted slategrey;
+}
+body .Listenup {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 60px;
+}
+@media (max-width: 500px) {
+  body .Listenup {
+    margin: 0px;
+  }
+}
+body .Listenup h2 {
+  margin-left: 20px;
+  border-bottom: 2px dotted slategray;
+}
+body .stuffandwork {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  body .stuffandwork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+body .stuffandwork .Stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 180px;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  body .stuffandwork .Stuff {
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+body .stuffandwork .Workhistory {
+  margin-right: 100px;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  body .stuffandwork .Workhistory {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+p {
+  line-height: 1.5;
+  font-size: 3rem;
+  margin: 20px;
+  font-family: 'Cookie', cursive;
+}
+h2 {
+  font-size: 4rem;
+  color: #2F4F4F;
+}
+li {
+  font-size: 3rem;
+  font-family: 'Cookie', cursive;
+}
+footer {
+  margin: 60px;
+}
+@media (max-width: 500px) {
+  footer {
+    margin: 0px;
+    margin-top: 50px;
+  }
+}
+footer h2 {
+  margin-left: 20px;
+  border-bottom: 2px dotted slategray;
+  border-width: 35%;
+}
+footer address {
+  line-height: 1.5;
+  font-size: 3rem;
+  font-family: 'Cookie', cursive;
+}
